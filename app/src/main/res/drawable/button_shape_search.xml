@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <padding android:bottom="@dimen/margin_button_search_shape" android:left="@dimen/margin_button_search_shape" android:right="@dimen/margin_button_search_shape" android:top="@dimen/margin_button_search_shape" />
+            <corners android:radius="@dimen/corner_radius" />
+            <solid android:color="@color/colorGrayMedium" />
+        </shape>
+    </item>
+
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <padding android:bottom="@dimen/margin_button_search_shape" android:left="@dimen/margin_button_search_shape" android:right="@dimen/margin_button_search_shape" android:top="@dimen/margin_button_search_shape" />
+            <corners android:radius="@dimen/corner_radius" />
+            <solid android:color="@color/colorGray" />
+        </shape>
+    </item>
+</selector>

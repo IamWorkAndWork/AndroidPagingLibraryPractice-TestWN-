@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/coinIcon"
+        android:layout_width="@dimen/iconSize"
+        android:layout_height="@dimen/iconSize"
+        tools:src="@mipmap/ic_launcher"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/coinName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textAppearance="@style/textTitle"
+            tools:text="@string/app_name" />
+
+
+        <TextView
+            android:id="@+id/coinDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_top"
+            android:ellipsize="end"
+            android:lines="3"
+            android:textAppearance="@style/textDescription"
+            tools:text="@string/app_name" />
+
+    </LinearLayout>
+
+</LinearLayout>

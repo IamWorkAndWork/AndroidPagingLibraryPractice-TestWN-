@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="iconSize">80dp</dimen>
+    <dimen name="space_top">8dp</dimen>
+    <dimen name="space_right">8dp</dimen>
+    <dimen name="space_left">8dp</dimen>
+    <dimen name="space_left_normal">16dp</dimen>
+    <dimen name="space_margin_normal">16dp</dimen>
+    <dimen name="space_margin_small">8dp</dimen>
+    <dimen name="space_button_1dp">1dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="textTitle">20sp</dimen>
+    <dimen name="textDescription">16sp</dimen>
+    <dimen name="textButtonPeriod">16sp</dimen>
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="margin_button_search_shape">10dp</dimen>
+
+</resources>

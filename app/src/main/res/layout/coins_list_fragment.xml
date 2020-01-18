@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.coins_list.CoinsListFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/coinsListSwipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/coinsListTxtQuery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_margin_normal"
+                    android:background="@drawable/button_shape_search"
+                    android:drawableStart="@drawable/ic_search_grey_300_36dp"
+                    android:fontFamily="@font/font_app"
+                    android:hint="@string/search"
+                    android:inputType="text" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_button_1dp"
+                    android:layout_marginTop="@dimen/space_top"
+                    android:alpha="0.9"
+                    android:background="@color/colorGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_margin_small"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/space_margin_normal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/period"
+                        android:textAppearance="@style/textSearch" />
+
+                    <Button
+                        android:id="@+id/coinsListBt24h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_left_normal"
+                        android:layout_marginTop="@dimen/space_button_1dp"
+                        android:layout_marginBottom="@dimen/space_button_1dp"
+                        android:background="@drawable/button_shape_period_active"
+                        android:text="@string/period_24h"
+                        android:textAppearance="@style/textButtonPeriod"
+                        android:textColor="@color/colorWhite" />
+
+                    <Button
+                        android:id="@+id/coinsListBt7d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_left_normal"
+                        android:layout_marginTop="@dimen/space_button_1dp"
+                        android:layout_marginBottom="@dimen/space_button_1dp"
+                        android:background="@drawable/button_shape_period_inactive"
+                        android:text="@string/period_7d"
+                        android:textAppearance="@style/textButtonPeriod"
+                        android:textColor="@color/colorGrayMedium" />
+
+                    <Button
+                        android:id="@+id/coinsListBt30d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_left_normal"
+                        android:layout_marginTop="@dimen/space_button_1dp"
+                        android:layout_marginBottom="@dimen/space_button_1dp"
+                        android:background="@drawable/button_shape_period_inactive"
+                        android:text="@string/period_30d"
+                        android:textAppearance="@style/textButtonPeriod"
+                        android:textColor="@color/colorGrayMedium" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_button_1dp"
+                    android:alpha="0.9"
+                    android:background="@color/colorGray" />
+
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/coinsListRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:scrollbars="vertical" />
+
+
+        </LinearLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/coinsListProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="16dp"
+        android:indeterminate="true" />
+
+</FrameLayout>

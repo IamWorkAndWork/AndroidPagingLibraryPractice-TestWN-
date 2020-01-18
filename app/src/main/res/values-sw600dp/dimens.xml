@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="iconSize">110dp</dimen>
+    <dimen name="space_top">12dp</dimen>
+
+    <dimen name="space_left_normal">32dp</dimen>
+
+    <dimen name="textTitle">24sp</dimen>
+    <dimen name="textDescription">18sp</dimen>
+    <dimen name="textButtonPeriod">18sp</dimen>
+
+</resources>
